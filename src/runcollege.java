@@ -1,15 +1,19 @@
+import com.abc.salary.salariedindivisual;
+import com.abc.salary.salarycalculate;
 import com.globalpayex.college.entities.professor;
 import com.globalpayex.college.entities.student;
 
 public class runcollege {
 	
 	public static void main(String[] args) {
-		int i = 10;
+		//int i = 10;
 		
 		student s = new student("Pratik", 'm', 10, 92.5f);
 		
 		String[] subjects = {"Physics", "Chemistry"};
-		professor p  = new professor("James", 'm',subjects);
+		professor p  = new professor("James", 'm',subjects, 5000, 24);
+		//System.out.println(salarycalculate.calculate(p));
+		System.out.println(p.calculate());
 		
 		/*System.out.println(i);
 		System.out.println(s);
