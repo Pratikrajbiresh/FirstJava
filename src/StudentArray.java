@@ -1,11 +1,12 @@
+import com.globalpayex.college.entities.Studentold;
 
 public class StudentArray {
 	public static void main(String[] args) {
-		Student obj1 = new Student();
-		Student obj2 = new Student();
-		Student obj3 = new Student();
+		Studentold obj1 = new Studentold();
+		Studentold obj2 = new Studentold();
+		Studentold obj3 = new Studentold();
 		
-		Student[] ah = {obj1, obj2, obj3};
+		Studentold[] ah = {obj1, obj2, obj3};
 		
 		for(int i = 0; i <= ah.length - 1; i++) {
 			System.out.println(ah[i].Name);

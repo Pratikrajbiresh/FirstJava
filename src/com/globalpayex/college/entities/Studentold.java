@@ -1,5 +1,6 @@
+package com.globalpayex.college.entities;
 
-public class Student {
+public class Studentold {
 	
 	//instance attributes
 	String Name;
@@ -10,30 +11,30 @@ public class Student {
 	
 	// class attributes
 	
-	static int count;
+	public static int count;
 	
 	//overloaded constructors
 	
-	Student() {
+	public Studentold() {
 	this("NB", 'm', 25, 95f);
 	}
 	
 	//constructor
-	Student(String Name, char Gender, int roll, float marks) {
+	public Studentold(String Name, char Gender, int roll, float marks) {
 		this.Name = Name;
 		this.Gender = Gender;
 		this.roll = roll;
 		this.marks = marks;
-		++Student.count;
+		++Studentold.count;
 	}
 	
-	String getDetails() {
+	public String getDetails() {
 		
 		return String.format("Name: %s\nGender: %s\nroll: %s\nmarks: %s", this.Name,this.Gender,this.roll,this.marks);
 		//return "Name: " + this.Name + "\nGender: " + this.Gender + "\nroll: " + this.roll + "\nmarks: " + this.marks;
 	}
 	
-	char getGrade() {
+	public char getGrade() {
 		char grade;
 		
 		if(marks<0 || marks>100) {
@@ -50,9 +51,9 @@ public class Student {
 		return grade;
 	}
 	
-	static Student newInstance(String Name, char Gender, int roll, float marks) {
+	public static Studentold newInstance(String Name, char Gender, int roll, float marks) {
 		//System.out.println(this);
-		return new Student(Name, Gender, roll, marks);
+		return new Studentold(Name, Gender, roll, marks);
 	}
 	}
 

@@ -1,21 +1,22 @@
+import com.globalpayex.college.entities.Studentold;
 
 public class createStudent {
 	
 	public static void main(String[] args) {
-		System.out.println(Student.count);
+		System.out.println(Studentold.count);
 		//Student s1 = new Student();
 		//Internally
 		// new ---> RAM 6006 
 		// Student(6006)
 		
-		Student s1 = new Student( "Pratik", 'm', 57, 90f);
+		Studentold s1 = new Studentold( "Pratik", 'm', 57, 90f);
 		
 		
-		Student s2 = new Student( "Pratik", 'm', 57, 90f);
+		Studentold s2 = new Studentold( "Pratik", 'm', 57, 90f);
 		
-		System.out.println(Student.count);
+		System.out.println(Studentold.count);
 		
-		Student s3 = new Student();
+		Studentold s3 = new Studentold();
 		
 		
 		/*System.out.println(s1.Name);
@@ -44,11 +45,11 @@ public class createStudent {
 		
 		System.out.println(s3.getDetails());
 		System.out.println(s3.getGrade());
-		System.out.println(Student.count);
+		System.out.println(Studentold.count);
 		
-		Student s4 = Student.newInstance("Meh", 'f', 18, 66f);
+		Studentold s4 = Studentold.newInstance("Meh", 'f', 18, 66f);
 		System.out.println(s4.getDetails());
-		System.out.println(Student.count);
+		System.out.println(Studentold.count);
 	}
 	
 
