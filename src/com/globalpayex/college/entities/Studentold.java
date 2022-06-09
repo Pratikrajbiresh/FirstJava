@@ -3,8 +3,8 @@ package com.globalpayex.college.entities;
 public class Studentold {
 	
 	//instance attributes
-	String Name;
-	char Gender;
+	public String Name;
+	public char Gender;
 	int roll;
 	float marks; 
 	
