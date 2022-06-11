@@ -1,14 +1,14 @@
 import com.abc.salary.salariedindivisual;
 import com.abc.salary.salarycalculate;
 import com.globalpayex.college.entities.professor;
-import com.globalpayex.college.entities.student;
+import com.globalpayex.college.entities.studentdetails;
 
 public class runcollege {
 	
 	public static void main(String[] args) {
 		//int i = 10;
 		
-		student s = new student("Pratik", 'm', 10, 92.5f);
+		studentdetails s = new studentdetails("Pratik", 'm', 10, 92.5f);
 		
 		String[] subjects = {"Physics", "Chemistry"};
 		professor p  = new professor("James", 'm',subjects, 5000, 24);

@@ -1,13 +1,13 @@
 package com.globalpayex.college.entities;
 
-public class student extends collegeuser {
+public class studentdetails extends collegeuser {
 	
 	
-	int roll;
-	float marks;
+	public int roll;
+	public float marks;
 	
 	
-	public student(String name, char gender, int roll, float marks) {
+	public studentdetails(String name, char gender, int roll, float marks) {
 		super(name,gender); //calls the super class constructor
 		// Internally
 		// collegeuser(this)
