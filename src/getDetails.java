@@ -10,11 +10,11 @@ public class getDetails {
 		char grade;
 		if(mark<0 || mark>100) {
 			grade = 'I';
-		} else if (mark >= 80) {
+		} else if (mark >= 90) {
 			grade = 'A';
-		} else if (mark >= 70) {
-			grade = 'B';
 		} else if (mark >= 60) {
+			grade = 'B';
+		} else if (mark >= 50) {
 			grade = 'C';
 		} else {
 			grade = 'F';
