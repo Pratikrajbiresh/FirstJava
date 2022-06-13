@@ -13,6 +13,7 @@ public class Studentold {
 	
 	public static int count;
 	
+	
 	//overloaded constructors
 	
 	public Studentold() {
@@ -26,13 +27,18 @@ public class Studentold {
 		this.roll = roll;
 		this.marks = marks;
 		++Studentold.count;
+		
+	
 	}
+	
 	
 	public String getDetails() {
 		
 		return String.format("Name: %s\nGender: %s\nroll: %s\nmarks: %s", this.Name,this.Gender,this.roll,this.marks);
 		//return "Name: " + this.Name + "\nGender: " + this.Gender + "\nroll: " + this.roll + "\nmarks: " + this.marks;
 	}
+	
+	
 	
 	public char getGrade() {
 		char grade;

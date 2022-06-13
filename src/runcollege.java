@@ -1,5 +1,5 @@
-import com.abc.salary.salariedindivisual;
 import com.abc.salary.salarycalculate;
+import com.globalpayex.college.entities.Address;
 import com.globalpayex.college.entities.professor;
 import com.globalpayex.college.entities.studentdetails;
 
@@ -9,6 +9,8 @@ public class runcollege {
 		//int i = 10;
 		
 		studentdetails s = new studentdetails("Pratik", 'm', 10, 92.5f);
+		s.setAddress(new Address("HH", "IN", 400069));
+		System.out.println(s.getDetails());
 		
 		String[] subjects = {"Physics", "Chemistry"};
 		professor p  = new professor("James", 'm',subjects, 5000, 24);
