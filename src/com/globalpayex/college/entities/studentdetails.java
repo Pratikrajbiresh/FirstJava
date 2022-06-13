@@ -6,8 +6,21 @@ public class studentdetails extends collegeuser {
 	public int roll;
 	public float marks;
 	
-	
 	public studentdetails(String name, char gender, int roll, float marks) {
+		super(name,gender); //calls the super class constructor
+		// Internally
+		// collegeuser(this)
+		
+//		this.name = name;
+//		this.gender = gender;
+//		this.roll = roll;
+//		this.marks = marks;
+//		this.getAddress()= null;
+		
+	} 
+	
+	
+	public studentdetails(String name, char gender, int roll, float marks, Address add) {
 		super(name,gender); //calls the super class constructor
 		// Internally
 		// collegeuser(this)
@@ -16,7 +29,10 @@ public class studentdetails extends collegeuser {
 		this.gender = gender;
 		this.roll = roll;
 		this.marks = marks;
+		
 	} 
+	
+	
 	
 	/*@Override
 	public String getDetails() {

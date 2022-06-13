@@ -9,10 +9,11 @@ public class createStudent {
 		// new ---> RAM 6006 
 		// Student(6006)
 		
-		Studentold s1 = new Studentold( "Pratik", 'm', 57, 90f);
+		final Studentold s1 = new Studentold( "Pratik", 'm', 57, 90f);
+		// s1 is final and cannot reassign a new value
 		
-		
-		Studentold s2 = new Studentold( "Pratik", 'm', 57, 90f);
+		final Studentold s2 = new Studentold( "Pratik", 'm', 57, 90f);
+		// s2 is final and cannot reassign a new value
 		
 		System.out.println(Studentold.count);
 		
