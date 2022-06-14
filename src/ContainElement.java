@@ -1,34 +1,44 @@
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
-import java.util.Scanner;
-
 
 import com.globalpayex.college.entities.studentdetails;
 
-public class ContainElement {
-	
-	public static void main(String[] args) {
-		List<studentdetails> student = Arrays.asList(
-				new studentdetails("Pratik", 'm', 56, 94),
-				new studentdetails("Shashank", 'm', 84, 45),
-				new studentdetails("Ayush", 'm', 12, 85),
-				new studentdetails("Raunak", 'm', 52, 70)
-				);
-		
-		System.out.println("Enter roll no of student you want to search: ");
-		Scanner scanner = new Scanner(System.in);
-		int roll = scanner.nextInt();
-		
-		/*student.forEach(students -> {
-			if(students.name "Pratik")
+
+
+public class ContainElement
+{
+	public static void printStudentDetails(List<studentdetails> studentList, int roll)
+	{
+		boolean isNotPresent = true;
+		for (studentdetails std: studentList)
+		{
+			if (std.roll() == roll)
 			{
-				System.out.println(students.name);
-				System.out.println(students.gender);
+				System.out.println(std.getDetails());
+				isNotPresent = false;
+				break;
 			}
-		});*/
-		student.containsAll(new studentdetails("NA", 'm', roll, 0));
+		}
+		
+		if (isNotPresent)
+		{
+			System.out.println("Student not found");
+			
+		}
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		/*List<Student> studentList =  Arrays.asList(new Student("ABN",'M',35,77.63f),
+												 new Student("PQR",'F',25,71.43f),
+												new Student("XYZ",'M',15,67.56f));
+		boolean isFound = studentList.contains(new Student("NA",'M',85,0.0f));
+		System.out.println(isFound ? "Student found" : "Student Not found");*/
+
 		
 	}
+
 
 }
